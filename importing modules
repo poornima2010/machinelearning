@@ -1,0 +1,411 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMGDVrv2L0cm/MymyXRuaDU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/poornima2010/machinelearning/blob/main/importing%20modules\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uOfUgxRVh_8Y",
+        "outputId": "eeaadcf7-75b6-4ac1-947c-8e3fdfbb5158"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello , you're welcome\n"
+          ]
+        }
+      ],
+      "source": [
+        "#regular expression (re or regex)\n",
+        "import re\n",
+        "data=\"Hello , you're welcome\"\n",
+        "print(data)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "owo3pc11vhqe"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#search\n",
+        "a=re.search(\"you're\", data)\n",
+        "print(a)\n",
+        "print(a.start())\n",
+        "print(a.end())\n",
+        "print(data[7:13])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GEFb1bOPiTvR",
+        "outputId": "2d3641e1-e731-4eaa-a8bb-bfea83f3b3bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<re.Match object; span=(8, 14), match=\"you're\">\n",
+            "8\n",
+            "14\n",
+            " you'r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#sub\n",
+        "data=\"Hello you're welcome\"\n",
+        "b=re.sub(\"\\s\", \"and\", data)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SKvLk34HiT5t",
+        "outputId": "e78366b9-3a7a-4e6b-f74e-3927afaa673b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Helloandyou'reandwelcome\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#split\n",
+        "c=re.split(\"\\s\",data,1)#1 is the value that for how many words we can splits\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2SSlxTQAkpsC",
+        "outputId": "b92f3241-7244-4446-e6f8-d1efa0ca98d4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hello', \"you're welcome\"]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data=\"my name is poornima 12345\"\n",
+        "d=re.findall(\"\\d\", data) # print the digits\n",
+        "print(d)\n",
+        "d=re.findall(\"\\d+\", data)\n",
+        "print(d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vS-mVRZslUnb",
+        "outputId": "e160c7ae-3519-45ad-9463-e04cf07d3bae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['1', '2', '3', '4', '5']\n",
+            "['12345']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# module -> \n",
+        "import math#sqrt, factorial\n",
+        "print(math.sin(0.5))\n",
+        "print(math.pi)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zSrKwnqvnb6m",
+        "outputId": "4cf0794e-729b-4190-f24f-36fe3e199662"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.479425538604203\n",
+            "3.141592653589793\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import datetime\n",
+        "a=datetime.datetime.now()\n",
+        "print(a.year)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tKxPmtfbn5Vo",
+        "outputId": "6b1e513f-8bf4-4fdf-b347-9c363abdfae2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2022\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import new\n",
+        "new.ex(\"poori\", 10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4GfYfe2to-ot",
+        "outputId": "b2f52ed9-ae7a-4654-d053-a645462b95fb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "poori 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class student:\n",
+        "  name=\"poori\"\n",
+        "  sec=\"A\"\n",
+        "  def __init__(self, color):\n",
+        "    self.color=color\n",
+        "    #methode\n",
+        "  def a(self):\n",
+        "    print(\"hello world\")\n",
+        "  class junior(student):\n",
+        "   def __init__(self,color,camera):\n",
+        "     self.camera=camera\n",
+        "     student.__init__(self, color)\n",
+        " \n",
+        "obj=student(\"black\")\n",
+        "print(obj.color)\n",
+        "print(obj.name)\n",
+        "print(obj.a())\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "fJrzQ5iPvjbZ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "787a8fb5-4e25-47a3-affa-0a58c2ec5df2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "black\n",
+            "poori\n",
+            "hello world\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "obj1= junior(\"black\", \"single\")\n",
+        "print(obj1.camera)\n",
+        "#print(obj1.display)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AUP3XHRB0ewb",
+        "outputId": "7cd186b5-0529-44dd-c56e-bdb79c2e89d3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "single\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#encapsulation->hiding or binding data into single unit\n",
+        "class account:\n",
+        "  def __init__(self,name, password):\n",
+        "    self.name=name\n",
+        "    self.__password=password#hiding the data here we can not access data directly so here we have create a function\n",
+        "  def show(self):\n",
+        "    print(self.__password)\n",
+        "obj=account(\"xyz\",\"uvw\") \n",
+        "print(obj.name)\n",
+        "obj.show()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qpsQlYYs2XjK",
+        "outputId": "75dadfe3-3f16-4349-f53d-e68d3cec97fc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "xyz\n",
+            "uvw\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#polymorphism->many different forms\n",
+        "class birds:\n",
+        "  def intro(self):\n",
+        "    print(\"there are different types of birds\")\n",
+        "  def fly(self):\n",
+        "    print(\"most of them are can not fly\")\n",
+        "class parrot(birds):\n",
+        "  def fly(self):\n",
+        "    print(\"parrot can flly\")\n",
+        "class penguin(birds):\n",
+        "  def fly(self):\n",
+        "    print(\"can not fly\")"
+      ],
+      "metadata": {
+        "id": "0Wr3q_1B47Zp"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=birds()\n",
+        "p=parrot()\n",
+        "e=penguin()\n",
+        "b.fly()\n",
+        "p.fly()\n",
+        "e.fly()\n",
+        "b.intro()\n",
+        "p.intro()\n",
+        "e.intro()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "seUnZNiV6Lyu",
+        "outputId": "f540ec8d-0678-44d0-89cb-833744628e07"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "most of them are can not fly\n",
+            "parrot can flly\n",
+            "can not fly\n",
+            "there are different types of birds\n",
+            "there are different types of birds\n",
+            "there are different types of birds\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
