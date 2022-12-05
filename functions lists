@@ -1,0 +1,406 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/poornima2010/machinelearning/blob/main/functions%20lists\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8l-hxOcj7r5a",
+        "outputId": "5178b488-46bb-49ba-b36d-268066c1d056"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "100\n",
+            "True\n",
+            "<class 'str'>\n",
+            "90\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=100\n",
+        "print(a)\n",
+        "name =\"poori\"\n",
+        "print(10>9)\n",
+        "print(type(name))\n",
+        "a=10\n",
+        "b=9\n",
+        "print(a*b)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "S5TgAXKXhvXt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=\"python\"\n",
+        "print(s[0:5:3])\n",
+        "print(s[2:5:4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ELRA8hmNfDN-",
+        "outputId": "cf448a0d-8887-402d-caa5-899fa9360586"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ph\n",
+            "t\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add():\n",
+        "  print(\"hello\")\n",
+        "add()\n",
+        "def add1():\n",
+        "  a=int(input(\"enter the element\"))\n",
+        "  b=int(input(\"enter the 2nd number\"))\n",
+        "  print(a+b)\n",
+        "add1()\n",
+        "def add2(name, no):\n",
+        "  print(\"my fav\", name, no)\n",
+        "add2(\"poori\", 20)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s_f36VVOfaSu",
+        "outputId": "995e2d97-cda2-4a29-8e41-21bf61e8a24d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello\n",
+            "enter the element2\n",
+            "enter the 2nd number3\n",
+            "5\n",
+            "my fav poori 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 217
+        },
+        "id": "Hd9MVVGFbKRw",
+        "outputId": "8c70f319-c65c-4d4e-a986-e213e75d0663"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "4\n"
+          ]
+        },
+        {
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "output_type": "error",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-8-9e15cb89bca2>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mmytuple\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"x\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m2\u001b[0m \u001b[0;34m,\u001b[0m \u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmytuple\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mmytuple\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m11\u001b[0m\u001b[0;34m;\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+          ]
+        }
+      ],
+      "source": [
+        "mytuple=(\"x\", 1,2 , True)\n",
+        "print(len(mytuple))\n",
+        "mytuple[0]=11;\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xiteLsB4d3iM",
+        "outputId": "017ff379-f8cb-41af-c716-5da7e790a5e6"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "{'name': 'poornima', 'age': 20, 'year of birth': 2002}\n",
+            "poornima\n",
+            "{'name': 'poornima', 'age': 19, 'year of birth': 2002}\n",
+            "{'name': 'poornima', 'year of birth': 2002}\n",
+            "<class 'str'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "mydic={\n",
+        "    \"name\":\"poornima\",\"age\":20,\"year of birth\":2002\n",
+        "}\n",
+        "print(mydic)\n",
+        "print(mydic[\"name\"])\n",
+        "mydic[\"age\"]=19;\n",
+        "print(mydic)\n",
+        "del mydic[\"age\"]\n",
+        "print(mydic)\n",
+        "print(type(\"age\"))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 217
+        },
+        "id": "t-kwzpdmfgoM",
+        "outputId": "0fc42aa8-6a3b-4af1-8200-373feb6e5b2f"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "{1, 20.2, 'poornima'}\n"
+          ]
+        },
+        {
+          "ename": "NameError",
+          "evalue": "ignored",
+          "output_type": "error",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-23-882fd5c37807>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmyset\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mappend\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmyset\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m100\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'append' is not defined"
+          ]
+        }
+      ],
+      "source": [
+        "myset={1,\"poornima\", 20.2}\n",
+        "print(myset)\n",
+        "\n",
+        "append.myset(100)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 269
+        },
+        "id": "pp0xjYGFlpJr",
+        "outputId": "5016e445-b98d-46f1-84fa-5195b0c8c1ab"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "{'A'}\n",
+            "{'A'}\n",
+            "{1, 2, 3, 'A', 'B', 'C', 'r'}\n",
+            "{'A', 10, 'C', 'B'}\n"
+          ]
+        },
+        {
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "output_type": "error",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-36-a15fdf56153e>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[0mset1\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0madd\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mset1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 9\u001b[0;31m \u001b[0mset1\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m;\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'set' object does not support item assignment"
+          ]
+        }
+      ],
+      "source": [
+        "set1={\"A\",\"B\",\"C\"}\n",
+        "set2={1,2,3,\"A\"}\n",
+        "set3={1,\"r\",\"A\"}\n",
+        "print(set1.intersection(set2))\n",
+        "print(set1&set2&set3)\n",
+        "print(set2|set1|set3)\n",
+        "set1.add(10)\n",
+        "print(set1)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true
+        },
+        "id": "cvzJ7Gb0bcE7",
+        "outputId": "7b235715-d6dd-4181-d7c2-4d433efc880e"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "ph\n"
+          ]
+        }
+      ],
+      "source": [
+        "s=\"python\"\n",
+        "print(s[0:5:3])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "31Itqu4X-_wo",
+        "outputId": "6fc961b5-c89d-4cc0-8cf0-5142b7764490"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "['poori', 1, 10, True]\n",
+            "poori\n",
+            "True\n",
+            "['me', 'mummy', True, 'poori', 10, True, 100]\n"
+          ]
+        }
+      ],
+      "source": [
+        "mylist=[\"poori\", 1, 10, True]\n",
+        "print(mylist)\n",
+        "print(mylist[0])\n",
+        "print(mylist[-1])\n",
+        "mylist[0]=True\n",
+        "mylist[1]=\"poori\"\n",
+        "mylist.append(100)\n",
+        "mylist.insert(0,\"mummy\")\n",
+        "mylist.insert(0,\"me\")\n",
+        "print(mylist)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cw_ODKj3DM_u",
+        "outputId": "c8b638c7-2868-46f0-840c-377e16067e39"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[1, 2, 3, 4, 3, 4, 5]\n",
+            "[2, 3, 3, 4, 5]\n"
+          ]
+        }
+      ],
+      "source": [
+        "l1=[1,2,3,4]\n",
+        "l2=[3,4,5]\n",
+        "l1.extend(l2)\n",
+        "print(l1)\n",
+        "l1.pop(0)\n",
+        "del l1[2]\n",
+        "print(l1)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V0_zJz9sGeY9",
+        "outputId": "132fc3e2-df84-4189-810d-4c7e880fd459"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "my name is poori\n",
+            "my name is poori\n"
+          ]
+        }
+      ],
+      "source": [
+        "name=\"poori\"\n",
+        "print(\"my name is \" + name)\n",
+        "print(\"my name is\", name)"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNE+vAFj20D4bLTPolATwob",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
